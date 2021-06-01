@@ -1,0 +1,227 @@
+* {
+    text-align: center;
+}
+
+
+header { 
+    color:#3c3c3c;
+    letter-spacing: 0.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+
+body {
+    width: 100%;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+
+p {
+    line-height: 1.75;
+}
+
+
+hr {
+    border-color: #828f89;
+    margin: 100px auto;
+    border-style: dotted none none;
+    border-width: 12px;
+    width: 10%;
+}
+
+
+
+
+/* NAV-BAR/HEADER */
+ /* font-family: 'Dancing Script', cursive; */
+
+.logo-head {
+    text-align: center;
+}
+
+
+.logo {
+    color:#3c3c3c;
+    font-size: 3em;
+    margin-top: 50px;
+    padding: 0;
+}
+
+
+.logo-subtitle {
+    letter-spacing: 0.1em;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+
+.navbar {
+    text-align: center;
+    margin-bottom:25px;
+}
+
+
+.nav-item {
+    display: inline-block;
+    margin-top: 20px;
+   
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: grey;
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 1.3em;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.nav-link:hover {
+    color: #368d61;
+}
+
+
+.current-page {
+    color: #368d61;
+    border-bottom: 2px solid #368d61;
+}
+
+
+.head-subtitle {
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: 1.4em;
+}
+
+
+.bio-text {
+    padding: 0 70px;
+}
+
+
+
+/* LAYOUT */
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+
+.top-container {
+    background-image: url(directory/brood-assorti.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.inner-container-top {
+    color: #fff;
+    font-variant:inherit ;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 150px 25px;
+    text-align: center;
+   
+}
+
+
+.bio-container {
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.bio-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid #828f89;
+}
+
+
+.product-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 4px solid #828f89;
+    margin-bottom: 25px;
+}
+
+
+.special {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.top-container-about {
+    background-image: url(../images/urk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+    
+
+footer {
+        background-color: #ac834f;
+        padding: 100px 0;
+        text-align: center;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 50px;    
+    }
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1000px) {
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+
+    .middle-container-special {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+    }
+
+
+    header {
+        display: grid;
+        grid-auto-flow: column;  
+    }
+
+
+    .head-subtitle {
+        width: 35%;
+        margin: 0 auto;
+    }
+
+
+    .logo-head {
+        display: grid;
+        justify-content: start;
+    }
+
+
+    .navbar {
+        display: grid;
+        justify-content: end;
+        margin-top: 100px;
+    }
